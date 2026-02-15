@@ -1,106 +1,107 @@
-Lab 5 – Face Detection & Clustering using Computer Vision
-Aim
-The aim of this project is to:
+# Face Detection and Clustering – Distance-Based Classification
 
-Detect faces in a group image using computer vision techniques.
-Extract meaningful color-based features from detected faces.
-Apply unsupervised learning (K-Means clustering) to group similar faces.
-Compare a template face image against detected faces using distance metrics.
-Analyze similarity using multiple mathematical distance measures.
-This project demonstrates how image processing and machine learning work together for pattern recognition.
+## Overview
+- This project is part of a Machine Learning and Pattern Recognition assignment focusing on distance-based techniques and unsupervised learning. The goal is to detect faces in an image, extract meaningful features, cluster them using K-Means, and classify a template image based on similarity.
+- The project demonstrates the integration of computer vision, feature engineering, clustering, and distance-based classification concepts.
+## Objectives
 
-Methodology
+- Detect faces using Haar Cascade classifiers.
+- Extract HSV-based color features (Hue and Saturation).
+- Apply K-Means clustering to group similar faces.
+- Classify a template image into one of the clusters.
+- Analyze distance-based classification concepts and evaluation principles.
 
-The project follows a structured computer vision pipeline.
+## Features
+- Implementation of face detection using OpenCV.
+- Feature extraction using HSV color space.
+- K-Means clustering with 3 clusters.
+- Visualization of clusters and centroids.
+- Template classification using trained clustering model.
+- Discussion of distance metrics and model evaluation concepts.
 
-1. Face Detection
-The group image (plaksha_Faculty.jpg) is loaded.
-Converted to grayscale.
-Faces are detected using OpenCV’s Haar Cascade Classifier.
-Bounding boxes are drawn around detected faces.
-![Face Detection Output](WA0011.jpg)
+## Technologies Used
+- Python
+- OpenCV
+- NumPy
+- Matplotlib
+- Scikit-learn
+- SciPy
 
+## Methodology
 
-3. Feature Extraction
-To prepare for clustering, features are extracted from each detected face:
-Image converted to HSV color space
-Mean Hue calculated
-Mean Saturation calculated
-Each face is represented as:
-Feature Vector = [Mean Hue, Mean Saturation]
-This transforms image data into numerical vectors suitable for machine learning.
-
-5. K-Means Clustering
-K-Means (k = 2) is applied to group faces.
-Clustering is based on extracted HSV features.
-Results are visualized using scatter plots.
-Clustering Visualization
-(Insert your clustering graph here)
-![KMeans Clustering](images/kmeans_scatter_plot.png)
-This visualization shows how faces are separated based on color characteristics.
-
-6. Template Matching and Similarity Analysis
-A template image (WA0010.jpg) is:
-Processed similarly
-Converted to HSV
-Feature vector extracted
-The template is then compared against detected faces using:
+### 1. Face Detection
+- The image plaksha_Faculty.jpg is loaded.
+- Converted to grayscale.
+- Haar Cascade classifier is applied.
+- Bounding boxes are drawn around detected faces.
+### 2. Feature Extraction
+- Faces are converted to HSV color space.
+- Mean Hue and Mean Saturation values are computed.
+- Each face is represented as a feature vector: [Hue, Saturation]
+### 3. K-Means Clustering
+- K-Means is applied with n_clusters = 3.
+- Faces are grouped based on similarity in HSV feature space.
+- Cluster centroids are calculated and visualized.
+### 4. Template Classification
+- Template image Dr_Shashi_Tharoor.jpg is processed similarly.
+- HSV features are extracted.
+- The trained K-Means model predicts the cluster label.
+- The template is plotted along with clustered faces.
+### 5. Visualizations
+- The project includes the following visual outputs:
+- Face detection with bounding boxes.
+- Scatter plot of clustered faces.
+- Centroid visualization.
+- Template classification in HSV feature space.
+  
+### Example Markdown image format:
+![Face Detection Output](images/face_detection.png)
+![Clustering Output](images/kmeans_clusters.png)
+![Template Classification](images/template_classification.png)
+Installation & Setup
+Clone the repository:
+git clone <repository_url>
+cd face_detection_clustering
+Install dependencies:
+pip install opencv-python numpy matplotlib scikit-learn scipy
+Run the script or notebook:
+jupyter notebook
+OR
+python main.py
+Usage
+Ensure images are placed in the project directory.
+Run the script sequentially.
+Observe clustering visualization and template classification results.
+Modify number of clusters (k) to experiment with grouping behavior.
+Distance-Based Classification Concepts
+Common Distance Metrics
 Euclidean Distance
 Manhattan Distance
 Minkowski Distance
 Cosine Similarity
-The closest face is identified based on minimum distance.
-Distance Comparison Visualization
-(Insert your distance comparison graph here)
-![Distance Metrics Comparison](WA0009.jpg)
-Key Findings
-HSV color space reduces dimensionality while preserving meaningful information.
-K-Means successfully groups visually similar faces.
-Distance metrics produce slightly different similarity rankings.
-Euclidean distance performed consistently for similarity comparison.
-Cosine similarity works well when magnitude differences are less important than direction.
-
-Conclusions
-
-This project demonstrates that:
-Computer vision pipelines require structured preprocessing.
-Feature engineering is critical for clustering performance.
-Unsupervised learning can effectively group visual data.
-Mathematical distance metrics directly impact similarity-based classification.
-Simple features (Hue and Saturation) can provide useful clustering results.
-
-Limitations:
-
-HSV features alone are not sufficient for high-accuracy facial recognition.
-More advanced embeddings (e.g., deep learning-based face encoders) would significantly improve performance.
-
-Technologies Used:
-
-Python
-OpenCV
-NumPy
-Matplotlib
-Scikit-learn
-SciPy
-
-How to Run
-Install dependencies:
-pip install opencv-python numpy matplotlib scikit-learn scipy
-Run:
-jupyter notebook
-Open:
-Lab 5 final - kuhuk katiyar.ipynb
-Run all cells sequentially.
-
-Project Structure
-Project Root
-│── Lab 5 final - kuhuk katiyar.ipynb
-│── plaksha_Faculty.jpg
-│── Dr_Shashi_Tharoor.jpg
-│── README.md
-│── images/
-      │── face_detection_output.png
-      │── kmeans_scatter_plot.png
-      │── distance_comparison.png
-Author
-Kuhuk Katiyar
+These metrics measure similarity between feature vectors. Smaller distances indicate higher similarity.
+Real-World Applications
+Distance-based classification is widely used in:
+Handwritten digit recognition (e.g., MNIST)
+Medical diagnosis systems
+Recommendation systems
+Fraud detection
+Face recognition systems
+Model Evaluation Concepts
+Cross-Validation
+Helps estimate generalization performance.
+Reduces overfitting.
+Improves reliability of model evaluation.
+Bias and Variance in KNN
+Low K → Low bias, High variance (Overfitting)
+High K → High bias, Low variance (Underfitting)
+Optimal K balances bias and variance.
+Conclusion
+This project demonstrates how classical computer vision techniques combined with unsupervised learning can be applied to clustering and classification tasks.
+While HSV-based features are useful for simple clustering, robust real-world face recognition systems require advanced feature representations such as deep learning embeddings.
+The implementation successfully integrates:
+Image preprocessing
+Feature engineering
+Unsupervised clustering
+Template-based classification
+Distance metric analysis
