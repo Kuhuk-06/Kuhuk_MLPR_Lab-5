@@ -20,7 +20,7 @@ Faces are detected using OpenCV’s Haar Cascade Classifier.
 Bounding boxes are drawn around detected faces.
 Face Detection Output
 (Insert your output image here)
-![Face Detection Output](WA0011.jpg)
+![WA0011.jpg]
 
 3. Feature Extraction
 To prepare for clustering, features are extracted from each detected face:
