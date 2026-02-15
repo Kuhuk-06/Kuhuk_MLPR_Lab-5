@@ -60,7 +60,6 @@
 <img width="411" height="423" alt="Screenshot 2026-02-15 at 7 47 44 PM" src="https://github.com/user-attachments/assets/b8cc77bb-74fc-4e0e-bc23-ed525987edd9" />
 <img width="879" height="419" alt="Screenshot 2026-02-15 at 7 49 51 PM" src="https://github.com/user-attachments/assets/ca491a15-86db-4662-82b5-276c52758e14" />
 <img width="812" height="432" alt="Screenshot 2026-02-15 at 7 50 29 PM" src="https://github.com/user-attachments/assets/b8468c58-8b43-4b2d-b6ec-d159afcd9af9" />
-<img width="811" height="427" alt="Screenshot 2026-02-15 at 7 51 51 PM" src="https://github.com/user-attachments/assets/81e065e9-796f-4422-a2ba-0f3372d09fb6" />
 <img width="782" height="428" alt="Screenshot 2026-02-15 at 7 52 16 PM" src="https://github.com/user-attachments/assets/46cf5364-628a-41a4-ab5f-d2d32c0612c4" />
 
 ## Installation & Setup
