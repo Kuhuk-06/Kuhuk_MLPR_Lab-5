@@ -1,76 +1,55 @@
-# Kuhuk_MLPR_Lab-5
-Lab 5 – Face Detection and Clustering using Computer Vision
-Overview
-This project implements face detection, feature extraction, clustering, and similarity comparison using Python and computer vision techniques.
-The notebook performs the following tasks:
-Detects faces in a group image using Haar Cascade Classifier
-Extracts color-based features (Hue and Saturation) from detected faces
-Applies K-Means clustering to group similar faces
-Visualizes clusters using scatter plots
-Compares detected faces with a template image using distance-based similarity
-The project demonstrates the practical application of image processing, unsupervised learning, and distance-based classification concepts.
-Technologies Used
-Python 3
-OpenCV (cv2)
-NumPy
-Matplotlib
-Scikit-learn (KMeans)
-SciPy (distance metrics)
-Project Structure
-Lab 5 final - kuhuk katiyar.ipynb
-plaksha_Faculty.jpg
-Dr_Shashi_Tharoor.jpg
-README.md
-How It Works
-1. Face Detection
+Lab 5 – Face Detection & Clustering using Computer Vision
+📌 Aim
+The aim of this project is to:
+Detect faces in a group image using computer vision techniques.
+Extract meaningful color-based features from detected faces.
+Apply unsupervised learning (K-Means clustering) to group similar faces.
+Compare a template face image against detected faces using distance metrics.
+Analyze similarity using multiple mathematical distance measures.
+This project demonstrates how image processing and machine learning work together for pattern recognition.
+🛠 Methodology
+The project follows a structured computer vision pipeline:
+1️⃣ Face Detection
 The group image (plaksha_Faculty.jpg) is loaded.
-It is converted to grayscale.
-Haar Cascade classifier is used to detect faces.
-2. Feature Extraction
-The image is converted to HSV color space.
-For each detected face:
+Converted to grayscale.
+Faces are detected using OpenCV’s Haar Cascade Classifier.
+Bounding boxes are drawn around detected faces.
+🔎 Face Detection Output
+(Insert your output image here)
+![Face Detection Output](images/face_detection_output.png)
+2️⃣ Feature Extraction
+To prepare for clustering, features are extracted from each detected face:
+Image converted to HSV color space
 Mean Hue
 Mean Saturation
-are computed as feature vectors.
-3. Clustering
-K-Means clustering is applied on the extracted features.
-Faces are grouped into two clusters.
+Each face is represented as:
+Feature Vector = [Mean Hue, Mean Saturation]
+This transforms image data into numerical vectors suitable for machine learning.
+3️⃣ K-Means Clustering
+K-Means (k = 2) is applied to group faces.
+Clustering is based on extracted HSV features.
 Results are visualized using scatter plots.
-4. Template Matching
-A template image (Dr_Shashi_Tharoor.jpg) is processed.
-Its Hue and Saturation features are extracted.
-Distance metrics are used to compare the template with clustered faces.
-The closest match is identified.
-Key Concepts Used
-Haar Cascade Face Detection
-HSV Color Space
-Feature Engineering
-K-Means Clustering
-Distance Metrics:
+📊 Clustering Visualization
+(Insert your clustering graph here)
+![KMeans Clustering](images/kmeans_scatter_plot.png)
+This visualization shows how faces are separated based on color characteristics.
+4️⃣ Template Matching & Similarity Analysis
+A template image (Dr_Shashi_Tharoor.jpg) is:
+Processed similarly
+Converted to HSV
+Feature vector extracted
+The template is then compared against detected faces using:
 Euclidean Distance
 Manhattan Distance
 Minkowski Distance
 Cosine Similarity
-How to Run
-Clone the repository:
-git clone <your-github-repo-link>
-Install dependencies:
-pip install opencv-python numpy matplotlib scikit-learn scipy
-Open the notebook:
-jupyter notebook
-Run all cells sequentially.
-Make sure the required images are in the same directory as the notebook.
-Report Section
-The notebook includes conceptual questions at the end.
-The report answers:
-Common distance metrics used in classification algorithms
-Their role in measuring similarity between feature vectors
-Learning Outcomes
-By completing this project, you demonstrate understanding of:
-Real-world face detection implementation
-Extracting meaningful image features
-Applying unsupervised learning (K-Means)
-Using distance-based similarity comparison
-Visualizing clustering results
-👩‍💻 Author
-Kuhuk Katiyar
+The closest face is identified based on minimum distance.
+📈 Distance Comparison Visualization
+(Insert your distance comparison graph here)
+![Distance Metrics Comparison](images/distance_comparison.png)
+📊 Key Findings
+HSV color space effectively reduces dimensionality while preserving meaningful information.
+K-Means successfully groups visually similar faces.
+Distance metrics produce slightly different similarity rankings.
+Euclidean distance performed consistently for similarity comparison.
+Cosine similarity works well when magnitude differences are less important than direction.
