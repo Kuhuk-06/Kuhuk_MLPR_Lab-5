@@ -57,6 +57,8 @@
   
 ### Example Markdown image format:
 ![Face Detection Output](Unknown.png)
+<img width="411" height="423" alt="Screenshot 2026-02-15 at 7 47 44 PM" src="https://github.com/user-attachments/assets/b8cc77bb-74fc-4e0e-bc23-ed525987edd9" />
+
 ![Shashi Tharoor face detection](Shashi Tharoor Face detected.jpg)
 ![Template classification](K-means clustering of face and Hue with template image.jpg)
 ![K-means clustering of face and Hue with template image](K-means Clustering of Face and Hue.jpg)
