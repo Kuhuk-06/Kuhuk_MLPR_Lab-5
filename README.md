@@ -57,57 +57,62 @@
   
 ### Example Markdown image format:
 ![Face Detection Output](Unknown.png)
+![Shashi Tharoor face detection](Shashi Tharoor Face detected.jpg)
+![Template classification](K-means clustering of face and Hue with template image.jpg)
+![K-means clustering of face and Hue with template image](K-means Clustering of Face and Hue.jpg)
 
-![Clustering Output](images/kmeans_clusters.png)
-![Template Classification](images/template_classification.png)
-Installation & Setup
-Clone the repository:
-git clone <repository_url>
-cd face_detection_clustering
-Install dependencies:
-pip install opencv-python numpy matplotlib scikit-learn scipy
-Run the script or notebook:
-jupyter notebook
-OR
-python main.py
-Usage
-Ensure images are placed in the project directory.
-Run the script sequentially.
-Observe clustering visualization and template classification results.
-Modify number of clusters (k) to experiment with grouping behavior.
-Distance-Based Classification Concepts
-Common Distance Metrics
-Euclidean Distance
-Manhattan Distance
-Minkowski Distance
-Cosine Similarity
-These metrics measure similarity between feature vectors. Smaller distances indicate higher similarity.
-Real-World Applications
-Distance-based classification is widely used in:
-Handwritten digit recognition (e.g., MNIST)
-Medical diagnosis systems
-Recommendation systems
-Fraud detection
-Face recognition systems
-Model Evaluation Concepts
-Cross-Validation
-Helps estimate generalization performance.
-Reduces overfitting.
-Improves reliability of model evaluation.
-Bias and Variance in KNN
-Low K → Low bias, High variance (Overfitting)
-High K → High bias, Low variance (Underfitting)
-Optimal K balances bias and variance.
-Conclusion
-This project demonstrates how classical computer vision techniques combined with unsupervised learning can be applied to clustering and classification tasks.
-While HSV-based features are useful for simple clustering, robust real-world face recognition systems require advanced feature representations such as deep learning embeddings.
-The implementation successfully integrates:
-Image preprocessing
-Feature engineering
+## Installation & Setup
+- Clone the repository:
+- git clone <repository_url>
+- cd face_detection_clustering
+  
+- Install dependencies:
+- pip install opencv-python numpy matplotlib scikit-learn scipy
+- Run the script or notebook:
+- jupyter notebook
+- OR
+- python main.py
+- 
+## Usage
+- Ensure images are placed in the project directory.
+- Run the script sequentially.
+- Observe clustering visualization and template classification results.
+- Modify number of clusters (k) to experiment with grouping behavior.
+- Distance-Based Classification Concepts
+  
+## Common Distance Metrics
+- Euclidean Distance
+- Manhattan Distance
+- Minkowski Distance
+- Cosine Similarity
+- These metrics measure similarity between feature vectors. Smaller distances indicate higher similarity.
+  
+## Real-World Applications
+- Distance-based classification is widely used in:
+- Handwritten digit recognition (e.g., MNIST)
+- Medical diagnosis systems
+- Recommendation systems
+- Fraud detection
+- Face recognition systems
+- Model Evaluation Concepts
+- Cross-Validation
+- Helps estimate generalization performance.
+- Reduces overfitting.
+- Improves reliability of model evaluation.
 
-
-Template-based classification
-Distance metric analysis
+## Bias and Variance in KNN
+- Low K → Low bias, High variance (Overfitting)
+- High K → High bias, Low variance (Underfitting)
+- Optimal K balances bias and variance.
+  
+## Conclusion
+- This project demonstrates how classical computer vision techniques combined with unsupervised learning can be applied to clustering and classification tasks.
+- While HSV-based features are useful for simple clustering, robust real-world face recognition systems require advanced feature representations such as deep learning embeddings.
+- The implementation successfully integrates:
+- Image preprocessing
+- Feature engineering
+- Template-based classification
+- Distance metric analysis
 
 ## Contact
 For any queries or suggestions, reach out at [kuhuk.katiyar.ug24@plaksha.edu.in].
