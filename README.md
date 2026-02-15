@@ -37,7 +37,8 @@
 ### 2. Feature Extraction
 - Faces are converted to HSV color space.
 - Mean Hue and Mean Saturation values are computed.
-- Each face is represented as a feature vector: [Hue, Saturation]
+- Each face is represented as a feature vector:
+  [Hue, Saturation]
 ### 3. K-Means Clustering
 - K-Means is applied with n_clusters = 3.
 - Faces are grouped based on similarity in HSV feature space.
@@ -55,7 +56,8 @@
 - Template classification in HSV feature space.
   
 ### Example Markdown image format:
-![Face Detection Output](images/face_detection.png)
+![Face Detection Output](Unknown.png)
+
 ![Clustering Output](images/kmeans_clusters.png)
 ![Template Classification](images/template_classification.png)
 Installation & Setup
@@ -105,3 +107,6 @@ Feature engineering
 Unsupervised clustering
 Template-based classification
 Distance metric analysis
+
+## Contact
+For any queries or suggestions, reach out at [kuhuk.katiyar.ug24@plaksha.edu.in].
