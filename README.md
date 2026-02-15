@@ -60,7 +60,9 @@ K-Means successfully groups visually similar faces.
 Distance metrics produce slightly different similarity rankings.
 Euclidean distance performed consistently for similarity comparison.
 Cosine similarity works well when magnitude differences are less important than direction.
+
 Conclusions
+
 This project demonstrates that:
 Computer vision pipelines require structured preprocessing.
 Feature engineering is critical for clustering performance.
@@ -69,10 +71,12 @@ Mathematical distance metrics directly impact similarity-based classification.
 Simple features (Hue and Saturation) can provide useful clustering results.
 
 Limitations:
+
 HSV features alone are not sufficient for high-accuracy facial recognition.
 More advanced embeddings (e.g., deep learning-based face encoders) would significantly improve performance.
 
-Technologies Used
+Technologies Used:
+
 Python
 OpenCV
 NumPy
