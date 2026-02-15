@@ -18,8 +18,7 @@ The group image (plaksha_Faculty.jpg) is loaded.
 Converted to grayscale.
 Faces are detected using OpenCV’s Haar Cascade Classifier.
 Bounding boxes are drawn around detected faces.
-Face Detection Output
-WA0011.jpg
+![Face Detection Output](WA0011.jpg)
 
 
 3. Feature Extraction
