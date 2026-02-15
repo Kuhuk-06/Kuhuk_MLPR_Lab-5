@@ -104,7 +104,7 @@ While HSV-based features are useful for simple clustering, robust real-world fac
 The implementation successfully integrates:
 Image preprocessing
 Feature engineering
-Unsupervised clustering<img width="1073" height="627" alt="Screenshot 2026-02-15 at 7 39 12 PM" src="https://github.com/user-attachments/assets/4521ba71-88fe-4213-b660-4b0e0959ecf5" />
+
 
 Template-based classification
 Distance metric analysis
